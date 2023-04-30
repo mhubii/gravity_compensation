@@ -14,7 +14,13 @@ install(
   PROGRAMS
     src/EquationDerivation.py
     src/EquationDerivationRNEA.py
+    src/ParamsEstimation.py
   DESTINATION lib/${PROJECT_NAME}
+)
+
+install(
+  DIRECTORY src/test
+  DESTINATION share/${PROJECT_NAME}
 )
 
 ament_package()
